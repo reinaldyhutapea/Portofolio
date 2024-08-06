@@ -33,11 +33,28 @@ nav,
   display: flex;
 }
 
+  /* Fixed navigation bar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Ensure background color covers the content behind */
+  }
+
+  /* Add some padding to the body to avoid content hiding behind the navbar */
+  body {
+    padding-top: 70px; /* Adjust based on the height of your navigation bar */
+  }
+
+
+
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
 }
+
 
 .nav-links {
   gap: 2rem;
